@@ -4,8 +4,7 @@ on: [push, pull_request]
 
 jobs:
   test:
-    strategy:
-      fail-fast: false
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout
       uses: actions/checkout@v2
